@@ -29,7 +29,7 @@ public class MemberController {
         return member.getUsername();
     }
 
-    @PostConstruct
+//    @PostConstruct
     public void init() {
 //        memberRepository.save(new Member("userA"));
         for (int i=0; i<100; i++) {
