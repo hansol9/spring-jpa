@@ -5,7 +5,6 @@ spring:
     password:
     driver-class-name: org.h2.Driver
 
-
   jpa:
     hibernate:
       ddl-auto: create
@@ -13,6 +12,13 @@ spring:
       hibernate:
         show_sql: true
         format_sql: true
+
+  data:
+    web:
+      pageable:
+        default-page-size: 10
+        max-page-size: 2000
+        one-indexed-parameters: true
 
 logging.level:
   org.hibernate.SQL: debug
